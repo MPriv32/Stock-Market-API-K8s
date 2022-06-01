@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Pod
+metadata:
+  name: stock-api
+  labels:
+    app: stock-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: stock-api
+  template:
+    metadata:
+      labels:
+        app: stock-api
+    spec:
+      containers:
+      - name: stock-api
+        image: mpriv32/stock-api:latest
+        envFrom:
+        - secretRef:
+            name: api-credentials
