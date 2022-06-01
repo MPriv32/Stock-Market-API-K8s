@@ -20,3 +20,4 @@ spec:
         envFrom:
         - secretRef:
             name: api-credentials
+      restartPolicy: Never
