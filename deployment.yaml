@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: stock-api
-        image: mpriv32/stock-api:latest
+        image: mpriv32/stockapi:latest
         envFrom:
         - secretRef:
             name: api-credentials
