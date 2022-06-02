@@ -9,6 +9,7 @@ spec:
   containers:
   - name: stock-api
     image: mpriv32/stockapi:latest
+    command: ["python"]
     envFrom:
     - secretRef:
         name: api-credentials
