@@ -1,6 +1,6 @@
 # Stock-Market-API-K8s
 
-In this project I created a rest API that runs on Kubernetes. This is repository consists of job.yaml which creates the pod, service.yaml file and a secrets.yaml file for passing in environment variables.
+In this project I created a rest API that runs on Kubernetes. This repository consists of a job.yaml which creates the pod, a service.yaml file and a secrets.yaml file for passing in environment variables.
 
 I also used GitLab as my CI/CD, to automatically push code changes to my EKS cluster.
 An example of a successful pipeline run:
